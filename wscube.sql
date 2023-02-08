@@ -41,9 +41,28 @@ SELECT id,name AS usersName,address FROM wscube.users; /* Here AS is alias */
 SELECT * FROM wscube.users WHERE id > 2;
 
 /* other oprators 
-    <= 
-    >=
-    =
-    <
-    >
+                            <= 
+                            >=
+                            =
+                            <
+                            >
  */
+
+ /* MySQL  */
+/* 
+                            NOT NULL,
+                            UNIQUE,
+                            DEFAULT,
+                            CHECK,
+                            FORGIN KEY,
+                            PRIMARY KEY 
+*/
+
+ CREATE TABLE students
+(
+	id INT NOT NULL unique,
+    name varchar(100),
+    email varchar(150),
+    age tinyint check (age >= 18),
+    status boolean default 1
+)
