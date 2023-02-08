@@ -38,3 +38,12 @@ SELECT * FROM wscube.users
 SELECT id,name AS usersName,address FROM wscube.users; /* Here AS is alias */
 
 /* Where clouse */
+SELECT * FROM wscube.users WHERE id > 2;
+
+/* other oprators 
+    <= 
+    >=
+    =
+    <
+    >
+ */
